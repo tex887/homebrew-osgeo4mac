@@ -73,8 +73,8 @@ class Qgis20 < Formula
   depends_on SipBinary
   depends_on PyQtConfig
   depends_on 'qscintilla2' # will probably be a C++ lib deps in near future
-  depends_on 'qwt'
-  depends_on 'qwtpolar'
+  depends_on 'dakcarto/osgeo4mac/qwt' => ["without-framework"]
+  depends_on 'qwtpolar' => ["without-framework"]
   depends_on 'gsl'
   depends_on 'sqlite' # keg_only
   depends_on 'expat' # keg_only
