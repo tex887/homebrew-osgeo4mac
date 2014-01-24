@@ -65,8 +65,6 @@ def cmake_opts(qi, hb):
         ('WITH_ASTYLE', 'TRUE'),
         ('WITH_INTERNAL_SPATIALITE', 'FALSE'),
         ('WITH_PYSPATIALITE', 'FALSE'),
-        ('QWT_LIBRARY', '{hb}/opt/qwt/lib/qwt.framework/qwt'),
-        ('QWT_INCLUDE_DIR', '{hb}/opt/qwt/lib/qwt.framework/Headers'),
         ('WITH_INTERNAL_QWTPOLAR', 'FALSE'),
         ('WITH_MAPSERVER', 'TRUE'),
         ('WITH_STAGED_PLUGINS', 'FALSE'),
@@ -88,6 +86,8 @@ def cmake_opts(qi, hb):
     # ('SQLITE3_LIBRARY', '{hb}/opt/sqlite/lib/libsqlite3.dylib'),
     # ('QSCINTILLA_INCLUDE_DIR', '{hb}/opt/qscintilla2/include/Qsci'),
     # ('QSCINTILLA_LIBRARY', '{hb}/opt/qscintilla2/lib/libqscintilla2.dylib'),
+    # ('QWT_LIBRARY', '{hb}/opt/qwt/lib/qwt.framework/qwt'),
+    # ('QWT_INCLUDE_DIR', '{hb}/opt/qwt/lib/qwt.framework/Headers'),
 
     if os.path.exists(hb + '/Frameworks/Python.framework'):
         cm_opts['PYTHON_EXECUTABLE'] = '{hb}/bin/python'
